@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>contact Us</h1>
+      <div class="input_container">
+        <div class="input_content">
+          <h3>first Name:</h3>
+          <input type="text" id="first_name" />
+          <p class="error_first_name"></p>
+        </div>
+        <div class="input_content">
+          <h3>last Name:</h3>
+          <input type="text" id="last_name" />
+          <p class="error_last_name"></p>
+        </div>
+      </div>
+      <div class="input_content">
+        <h3>email adrres:</h3>
+        <input type="email" id="email" />
+        <p class="error_email"></p>
+      </div>
+      <div class="checkInput_container">
+        <h3>query type:</h3>
+        <div class="checkInput_content">
+          <div class="check_input">
+            <span class="select_img"><img src="" alt="" /></span>
+            <h5>General enquiry</h5>
+          </div>
+          <div class="check_input">
+            <span class="select_img"><img src="" alt="" /></span>
+            <h5>support request</h5>
+          </div>
+        </div>
+      </div>
+      <div class="textEreaContainer">
+        <h3>Message:</h3>
+        <textarea name="" id="message"></textarea>
+        <p class="error_textarea"></p>
+      </div>
+      <div class="select_container">
+       <div class="select_content">
+        <span class="select_img"><img src="" alt="" /></span>
+        <h4>i consent to bieng contacted by the team</h4>
+       </div>
+       <p class="error_select"></p>
+      </div>
+
+      <button class="button">
+        <p>submit</p>
+      </button>
+    </div>
+
+    <div class="message_container">
+      <div class="header_message">
+        <i class="fa-regular fa-circle-check"></i>
+        <h3>message sent !</h3>
+      </div>
+      <p>thank for completing the form . we'll be in touch soon!</p>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">HICHAM DRAKECH</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

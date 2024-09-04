@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --Green200: hsl(148, 38%, 91%);
+  --Green600: hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 54%);
+  --White: hsl(0, 0%, 100%);
+  --Grey500: hsl(186, 15%, 59%);
+  --Grey900: hsl(187, 24%, 22%);
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--Green200);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 700px;
+  background-color: var(--White);
+  border-radius: 10px;
+  padding: 20px;
+}
+.input_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  width: 100%;
+}
+.input_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input_content h3 {
+  text-transform: capitalize;
+}
+.input_content input {
+  height: 40px;
+  border-radius: 10px;
+  width: 300px;
+  outline: none;
+  border: 1px solid var(--Grey900);
+  text-align: center;
+}
+.input_content .error {
+  text-align: right;
+  color: var(--Red);
+}
+.input_content #email {
+  width: 100%;
+}
+.checkInput_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.checkInput_container h3 {
+  text-transform: capitalize;
+}
+.checkInput_content {
+  display: flex;
+  justify-content: space-around;
+}
+.check_input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--Grey900);
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.new_check_input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--Grey900);
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color:rgb(165, 226, 105);
+  color: var(--White);
+}
+/* Hide the default radio button */
+.check_input span {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--Green600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check_input span img{
+    border-radius: 50%;
+}
+.checkInput_container .error {
+  margin-left: 80px;
+  color: var(--Red);
+  text-transform: capitalize;
+}
+
+.textEreaContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.textEreaContainer textarea {
+  height: 80px;
+  border: 1px solid var(--Grey900);
+  border-radius: 10px;
+  padding: 10px;
+}
+.textEreaContainer .error {
+  color: var(--Red);
+  text-transform: capitalize;
+  text-align: right;
+}
+.select_container {
+  display: flex;
+  gap: 10px;
+  text-transform: capitalize;
+  flex-direction: column;
+}
+.select_content{
+    display: flex;
+    gap: 10px;
+    text-transform: capitalize;
+}
+.select_content .select_img {
+  height: 20px;
+  width: 20px;
+  border: 1px solid var(--Green600);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.select_container .error{
+    color: red;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+button {
+  width: 90%;
+  height: 40px;
+  color: var(--Green600);
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+button:hover {
+  background-color: var(--Green600);
+  color: var(--White);
+}
+button:active {
+  box-shadow: 0px 5px 10px var(--Green600);
+}
+.message_container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--Green600);
+  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  left: 35%;
+  width: 400px;
+  padding: 20px;
+  color: var(--White);
+  text-transform: capitalize;
+}
+.header_message {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--White);
+  text-transform: capitalize;
+}
+.message_container p {
+  font-size: 15px;
+}
+.error_first_name{
+    color: var(--Red);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.error_last_name{
+    color: var(--Red);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.error_email{
+    color: var(--Red);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.error_check_input{
+    color: var(--Red);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.error_textarea{
+    color: var(--Red);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.error_select{
+    color: var(--Red);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.correct{
+    color: var(--Green600);
+    text-transform: capitalize;
+    font-weight: 700;
+}
